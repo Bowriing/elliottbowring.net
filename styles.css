@@ -1,0 +1,145 @@
+body{
+    margin: 0px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    background-image: var(--gradient);
+    background-size: 200%;
+    animation: bg-animation 10s infinite;
+    min-height: 100vh;
+    
+}
+
+@keyframes bg-animation{
+    0%{
+        background-position: left;
+    }
+
+    50%{
+        background-position: right;
+    }
+
+    100%{
+        background-position: left;
+    }
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;  
+    font-family: "Fredoka", sans-serif;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+:root{
+    --quarterblack: rgba(0,0,0,0.25);
+    --darkgrey: #323643;
+    --lightgrey: #606470;
+    --blue: #93deff;
+    --white: #f7f7f7;
+    --gradient: linear-gradient(-45deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+}
+
+.main{
+    border-radius: 50px;
+    width: 75vw;
+    min-height: 100vh;
+    background-color: var(--quarterblack);
+    padding:  0 50px 0 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    max-height: 50px;
+}
+
+.navbar{
+    width: 75vw;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: var(--quarterblack);
+}
+
+.navbar-item{
+    display: flex;
+    height: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-item:hover{
+    cursor: pointer;
+}
+
+.greet-container{
+    height: 900px;
+    background-color: var(--quarterblack);
+    border-radius: 15px;
+    width: 65vw;
+    padding: 10px;
+    margin: 30px;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--quarterblack);
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.project-tile{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    background-color: var(--quarterblack);
+    border-radius: 15px;
+}
+
+.project-title{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.project-info{
+    font-size: 15px;
+}
+
+.tile-image{
+    max-height: 300px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.contacts-container{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75vw;
+}
+
+.contact-tile{
+    background-color: var(--quarterblack);
+    border-radius: 10px;
+    padding: 10px;
+}
