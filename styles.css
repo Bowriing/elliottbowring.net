@@ -94,21 +94,18 @@ body{
 }
 
 .contact-con{
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.link-con{
-    padding: 10px;
-    display: flex;
-    color: black;
-    background-color: var(--rainbow);
-    border-radius: 7px;
-}
-
 .link{
+    display: flex;
+    padding: 10px;
     color: black;
     font-weight: bold;
     text-decoration: none;
+    border-radius: 7px;
+    align-items: center;
 }
