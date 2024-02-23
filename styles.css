@@ -7,12 +7,14 @@
 }
 
 body{
-    background-color: rgb(26, 26, 26);
+    background-color: var(--dark);
 }
 
 :root{
     --rainbow: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(249,255,0,1) 20%, rgba(0,255,13,1) 40%, rgba(0,249,255,1) 60%, rgba(8,0,255,1) 80%, rgba(184,0,255,1) 100%);
-    --test: linear-gradient(rgba(1,1,1,1), rgba(2,2,2,2))
+    --test: linear-gradient(rgba(1,1,1,1), rgba(2,2,2,2));
+    --dark: rgb(26, 26, 26);
+    --darker: rgb(14, 14, 14);
 }
 
 @keyframes line {
@@ -44,12 +46,18 @@ body{
     animation: line 20s infinite;
 }
 
+.rainbow{
+    background-image: var(--rainbow);
+    background-size: 400%;
+    animation: line 20s infinite;
+}
+
 .intro-con{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(14, 14, 14);
+    background-color: var(--darker);
     height: 450px;
 }
 
@@ -61,4 +69,46 @@ body{
 
 .intro-sub{
     text-align: center;
+}
+
+.projects-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+}
+
+.project{
+    display: flex;
+    background-color: var(--darker);
+    width: 650px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.contact-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.link-con{
+    padding: 10px;
+    display: flex;
+    color: black;
+    background-color: var(--rainbow);
+    border-radius: 7px;
+}
+
+.link{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
 }
