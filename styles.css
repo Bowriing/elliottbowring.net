@@ -100,12 +100,16 @@ body{
     justify-content: space-evenly;
 }
 
+.link-con{
+    display: flex;
+    background-color: var(--darker);
+    border-radius: 7px;
+    padding: 10px;
+}
+
 .link{
     display: flex;
-    padding: 10px;
-    color: black;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 7px;
     align-items: center;
 }
