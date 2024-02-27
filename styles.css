@@ -87,6 +87,7 @@ body{
 
 .project{
     display: flex;
+    flex-direction: column;
     background-color: var(--darker);
     width: 650px;
     height: 400px;
@@ -112,4 +113,32 @@ body{
     font-weight: bold;
     text-decoration: none;
     align-items: center;
+}
+
+.skill{
+    display: flex;
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.python{
+    background-color: #ffd343;
+}
+
+.html{
+    background-color: #FF5733;
+}
+
+.css{
+    background-color: #4584B6;
+}
+
+.csharp{
+    background-color: #BF40BF;
+}
+
+.flask{
+    background-color: rgb(9, 175, 216);
 }
