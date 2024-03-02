@@ -92,6 +92,25 @@ body{
     width: 650px;
     height: 400px;
     border-radius: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.project-title{
+    font-size: 35px;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.project-subtitle{
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.project-text{
+    margin: 10px;
 }
 
 .contact-con{
@@ -109,21 +128,28 @@ body{
 }
 
 .link{
-    display: flex;
     font-weight: bold;
     text-decoration: none;
     align-items: center;
 }
 
-.skill{
+.skills{
     display: flex;
+    margin-top: 0px;
+    margin: 10px;
+}
+
+.skill{
+    height: 20px;
     background-color: darkblue;
     color: white;
     padding: 5px;
     border-radius: 5px;
+    margin: 3px;
 }
 
 .python{
+    color: black;
     background-color: #ffd343;
 }
 
@@ -139,6 +165,27 @@ body{
     background-color: #BF40BF;
 }
 
+.jinja{
+    background-color: #6D0D32;
+}
+
 .flask{
     background-color: rgb(9, 175, 216);
 }
+
+/* For Webkit browsers */
+::-webkit-scrollbar {
+    width: 15px; /* Width of the entire scrollbar */
+    position: absolute;
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: block;
+    height: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--dark)
+    
+  }
+  
