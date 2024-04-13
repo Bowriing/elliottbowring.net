@@ -5,96 +5,99 @@
         <meta name="viewport" content="width=device-width, inital-scale=1">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="https://kit.fontawesome.com/4386ccef7a.js" crossorigin="anonymous"></script>
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         
-        <title>EB</title>
+        <title>Elliott Bowring</title>
     </head>
 
     <body>
-        <div class="rainbow-line"></div>
-
         <div class="content">
+            <div class="intro">
+                <h1 class="name">Elliott Bowring</h1>
+                <h2 class="name-sub">Studying Computer Science BSc(Hons) at University of Hull</h2>
 
-            <div class="intro-con">
-                <p class="intro-name">Elliott Bowring</p>
-                <p class="intro-sub gradient-text">Graduating May 2024 - Expecting 1st Class Bachelors (Honours) Degree</p>
+                <p class="intro-text">
+                    Some of my hobbies consist of bodybuilding training at the Gym, exploring software technologies and PC Hardware.
+                </p>
             </div>
 
-            <div class="projects-con">
-                <div class="project-grid">
-                    <div class="project">
-                        <div class="project-title">Honours Project</div>
-                        <div class="project-subtitle">Energy Dashboard Estimater</div>
-                        <div class="skills">
-                            <i class="skill flask">Flask</i>
-                            <i class="skill python">Python</i>
-                            <i class="skill html">HTML</i>
-                            <i class="skill css">CSS</i>
-                            <i class="skill jinja">Jinja2</i>
-                        </div>
-                        <p class="project-text">
-                            Currently working on a web application that takes in raw energy usage CSV data. (This data only includes total energy usage in 30-min intervals)
-                            <br>
-                            <br>
-                            The application also takes in device information such as name, type of device and power rating.
-                            <br>
-                            <br>
-                            Then using a model trained from existing study/research data, will train a model that can be used.
-                            <br>
-                            <br>
-                            This model will then process the raw total consumption data (from user) and make estimations on what devices may have been used during the day based off patterns.
-                        </p>
-                    </div>
+            <div class="largeline"></div>
 
-                    <div class="project">
-                        <div class="project-title">Secure Digital Infrastructure</div>
-                        <div class="project-subtitle">SSH Server Config for (FAKE) Biotech Company</div>
-                        <div class="skills">
-                            <i class="skill" style="background-color: rgb(116, 13, 201);">SSH</i>
-                            <i class="skill" style="background-color: rgb(11, 105, 245);">ArchLinux</i>
-                            <i class="skill" style="background-color: rgb(231, 198, 8); color: black;">SFTP</i>
-                            <i class="skill" style="background-color: rgb(238, 234, 16); color: black;">Putty</i>
-                            <i class="skill" style="background-color: rgb(186, 77, 230)">Virtual Machine</i>
-                            <i class="skill" style="background-color: rgb(46, 161, 23);">Auditing</i>
-                            <i class="skill" style="background-color: rgb(105, 16, 16);">University</i>
+            <div class="images">
+                <img src="" alt="">
+            </div>
 
-                        </div>
-                        <p class="project-text">
-                            Setup a research data management system through virtual machine recourses.
-                            <br>
-                            <br>
-                            This consisted of setting up the Virtual Machine the server was run from, also configuration of the SSHD Server.
-                            <br>
-                            <br>
-                            Accounted for SFTP access, implemented private keys for logon of employees via putty SSH.
-                            <br>
-                            <br>
-                            Organised architecture of data directory/file system accounting for user privelages/access. 
-                            <br>
-                            <br>
-                            Finalised with a security assessment and audit to ensure proper configuration and protection/security setup.
-                        </p>
-                    </div>
+            <h1 class="title">Projects</h1>
+            <div class="projects">
+                <div class="project">
+                    <h2 class="project-title">Honours Project</h2>
+                    <h3 class="project-title">Energy Usage Dashboard/Estimator</h3>
+                    <p class="project-desc">
+                        - Web spplication that takes raw energy data from users tariff, uses the data to run through a filtration and proccessing algorithm to be compared with users given devices<br><br>
+                        - The analystics take into account data such as device name, type, periods of use in day, season, age and power rating of devices, future improvements to be made<br><br>
+                        - Using the result of the proccessed information, provides the user with intuitive feedback and reccomendations<br><br>
+                        - Built using Flask micro-framework and uses SQLite3 for storing data from users and other information<br><br>
+                        - All backend processing and database functionality is made using python and RESTful Apis for communication<br><br>
+                        - Great potential for future development to integrate PyTorch using reinforcement learning to better refine the reccomendations to the users
+                    </p>
+                </div>
 
+                <div class="line"></div>
+                
+                <div class="project">
+                    <h2 class="project-title">Distributed Systems Programming</h2>
+                    <h3 class="project-title">ASP.NET API, Client/Server Creation</h3>
+                    <p class="project-desc">
+                        - Module at university consisted of making a WEB API using a client and server using the ASP.NET framework<br><br>
+                        - Created RESTful API functionalities for handling requests on the server for multiple variations of requests<br><br>
+                        - API Key management, public and private key authentication, SHA1/SHA256 Hashing for security and many other security implementations<br><br>
+                        - CRUD Database operations were handmade for server to database fucntionality<br><br>
+                        - Used loosely coupled relationships in the structure of the API Server for security purposes<br><br>
+                        - Object relational mapping was used for querying the database for API functionality
+                    </p>
+                </div>
 
+                <div class="line"></div>
+
+                <div class="project">
+                    <h2 class="project-title">Safety Critical Systems</h2>
+                    <h3 class="project-title">Safety Analysis of a Brake-By-Wire System</h3>
+                    <p class="project-desc">
+                        - Module at university used methods to gather information regarding system faults and the reliability of the system<br><br>
+                        - The system covered was a Brake-By-Wire system for a vehicle, methods used were:<br>
+                        - Fault Tree Diagrams<br>
+                        - Logical Expressions<br>
+                        - Cut-Set calculations<br>
+                        - Markov Modelling<br>
+                        - MTBF Calculations<br>
+                        - Python Code for reliability calculations for the system over x amount of time
+                    </p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="project">
+                    <h2 class="project-title">Secure Digital Infrastructure</h2>
+                    <h3 class="project-title">SSH Server Configuration for a (Fake) Biotech Company</h3>
+                    <p class="project-desc">
+                        - Created and configured a data managemt system through virtual machine resourses hosted on an ArchLinux Machine<br><br>
+                        - Consisted of host machine configuration<br>
+                        - SSHD Server Configuration<br>
+                        - File System Structure<br>
+                        - Putty Public/Private Key and SFTP Access<br>
+                        - Data, Folder and Directory Permissions and Access based off of custom roles for employees<br>
+                        - Finalised with a full system security assessment and audit for proper configuration confirmation
+                    </p>
                 </div>
             </div>
 
-            <div class="contact-con">
-                <div class="link-con">
-                    <a href="https://github.com/bowriing" target="_blank" class="link gradient-text">
-                        <i class="fab fa-github fa-2x gradient-text" style="margin-right: 10px;"></i> Github
-                    </a> 
-                </div>
-
-                <div class="link-con">
-                    <a href="https://www.linkedin.com/in/bowriing/" target="_blank" class="link gradient-text">
-                        <i class="fab fa-linkedin fa-2x gradient-text" style="margin-right: 10px;"></i> LinkedIn
-                    </a> 
-                </div>
+            <div class="contacts">
+                <a href="mailto:elliottbowring@outlook.com" class="link email">elliottbowring@outlook.com</a>
+                <a href="https://www.linkedin.com/in/bowriing/" target="_blank" class="link gradient-text">
+                    <i class="fab fa-linkedin fa-2x gradient-text" style="margin-right: 10px;"></i>
+                </a> 
             </div>
         </div>
 
