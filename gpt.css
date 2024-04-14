@@ -1,0 +1,78 @@
+/* gpt.css */
+
+body {
+    background-color: #3a0f4d; /* Dark purple background */
+    color: #f06292; /* Pink text */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin: 0;
+}
+
+.content {
+    background-color: #2d0936; /* Darker purple content background */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.intro {
+    border-bottom: 2px solid #f06292;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.name {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.name-sub {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    font-size: 14px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.line {
+    border-top: 1px solid #f06292;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    margin-top: 20px;
+}
+
+.link {
+    color: #f06292;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.link.email:hover {
+    text-decoration: underline;
+}
+
+.gradient-text {
+    background: #f06292;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

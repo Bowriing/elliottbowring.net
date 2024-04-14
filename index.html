@@ -1,105 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="https://kit.fontawesome.com/4386ccef7a.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        
-        <title>Elliott Bowring</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="gpt.css">
+    <script src="https://kit.fontawesome.com/4386ccef7a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Elliott Bowring</title>
+</head>
 
-    <body>
-        <div class="content">
-            <div class="intro">
-                <h1 class="name">Elliott Bowring</h1>
-                <h2 class="name-sub">Studying Computer Science BSc(Hons) at University of Hull</h2>
+<body>
+    <div class="content">
+        <div class="intro">
+            <pre class="name">
+<span class="terminal-symbol">$cat bio.txt</span> <span class="terminal-output">
+    ___________       __  __     ____                     _            
+   / ____/ / (_)___  / /_/ /_   / __ )____ _      _______(_)___  ____ _
+  / __/ / / / / __ \/ __/ __/  / __  / __ \ | /| / / ___/ / __ \/ __ `/
+ / /___/ / / / /_/ / /_/ /_   / /_/ / /_/ / |/ |/ / /  / / / / / /_/ / 
+/_____/_/_/_/\____/\__/\__/  /_____/\____/|__/|__/_/  /_/_/ /_/\__, /  
+                                                              /____/ 
+            </span>
+            </pre>
 
-                <p class="intro-text">
-                    Some of my hobbies consist of bodybuilding training at the Gym, exploring software technologies and PC Hardware.
+            <h2 class="name-sub">Studying Computer Science BSc(Hons) at University of Hull</h2>
+
+            <p class="intro-text">
+                Some of my hobbies consist of bodybuilding training at the Gym, exploring software technologies and PC Hardware.
+            </p>
+        </div>
+
+        <div class="largeline"></div>
+
+        <div class="images">
+            <img src="" alt="">
+        </div>
+
+        <h1 class="title">Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <h2 class="project-title">Honours Project</h2>
+                <h3 class="project-title">Energy Usage Dashboard/Estimator</h3>
+                <p class="project-desc">
+                    <span class="terminal-symbol">$</span> vim energy.py<br>
+                    - Web spplication that takes raw energy data from users tariff, uses the data to run through a filtration and proccessing algorithm to be compared with users given devices<br>
+                    - The analystics take into account data such as device name, type, periods of use in day, season, age and power rating of devices, future improvements to be made<br>
+                    - Using the result of the proccessed information, provides the user with intuitive feedback and reccomendations<br>
+                    - Built using Flask micro-framework and uses SQLite3 for storing data from users and other information<br>
+                    - All backend processing and database functionality is made using python and RESTful Apis for communication<br>
+                    - Great potential for future development to integrate PyTorch using reinforcement learning to better refine the reccomendations to the users
                 </p>
             </div>
 
-            <div class="largeline"></div>
-
-            <div class="images">
-                <img src="" alt="">
+            <div class="line"></div>
+            
+            <div class="project">
+                <h2 class="project-title">Distributed Systems Programming</h2>
+                <h3 class="project-title">ASP.NET API, Client/Server Creation</h3>
+                <p class="project-desc">
+                    <span class="terminal-symbol">$</span> nano distributed.py<br>
+                    - Module at university consisted of making a WEB API using a client and server using the ASP.NET framework<br>
+                    - Created RESTful API functionalities for handling requests on the server for multiple variations of requests<br>
+                    - API Key management, public and private key authentication, SHA1/SHA256 Hashing for security and many other security implementations<br>
+                    - CRUD Database operations were handmade for server to database functionality<br>
+                    - Used loosely coupled relationships in the structure of the API Server for security purposes<br>
+                    - Object relational mapping was used for querying the database for API functionality
+                </p>
             </div>
 
-            <h1 class="title">Projects</h1>
-            <div class="projects">
-                <div class="project">
-                    <h2 class="project-title">Honours Project</h2>
-                    <h3 class="project-title">Energy Usage Dashboard/Estimator</h3>
-                    <p class="project-desc">
-                        - Web spplication that takes raw energy data from users tariff, uses the data to run through a filtration and proccessing algorithm to be compared with users given devices<br><br>
-                        - The analystics take into account data such as device name, type, periods of use in day, season, age and power rating of devices, future improvements to be made<br><br>
-                        - Using the result of the proccessed information, provides the user with intuitive feedback and reccomendations<br><br>
-                        - Built using Flask micro-framework and uses SQLite3 for storing data from users and other information<br><br>
-                        - All backend processing and database functionality is made using python and RESTful Apis for communication<br><br>
-                        - Great potential for future development to integrate PyTorch using reinforcement learning to better refine the reccomendations to the users
-                    </p>
-                </div>
+            <div class="line"></div>
 
-                <div class="line"></div>
-                
-                <div class="project">
-                    <h2 class="project-title">Distributed Systems Programming</h2>
-                    <h3 class="project-title">ASP.NET API, Client/Server Creation</h3>
-                    <p class="project-desc">
-                        - Module at university consisted of making a WEB API using a client and server using the ASP.NET framework<br><br>
-                        - Created RESTful API functionalities for handling requests on the server for multiple variations of requests<br><br>
-                        - API Key management, public and private key authentication, SHA1/SHA256 Hashing for security and many other security implementations<br><br>
-                        - CRUD Database operations were handmade for server to database fucntionality<br><br>
-                        - Used loosely coupled relationships in the structure of the API Server for security purposes<br><br>
-                        - Object relational mapping was used for querying the database for API functionality
-                    </p>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="project">
-                    <h2 class="project-title">Safety Critical Systems</h2>
-                    <h3 class="project-title">Safety Analysis of a Brake-By-Wire System</h3>
-                    <p class="project-desc">
-                        - Module at university used methods to gather information regarding system faults and the reliability of the system<br><br>
-                        - The system covered was a Brake-By-Wire system for a vehicle, methods used were:<br>
-                        - Fault Tree Diagrams<br>
-                        - Logical Expressions<br>
-                        - Cut-Set calculations<br>
-                        - Markov Modelling<br>
-                        - MTBF Calculations<br>
-                        - Python Code for reliability calculations for the system over x amount of time
-                    </p>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="project">
-                    <h2 class="project-title">Secure Digital Infrastructure</h2>
-                    <h3 class="project-title">SSH Server Configuration for a (Fake) Biotech Company</h3>
-                    <p class="project-desc">
-                        - Created and configured a data managemt system through virtual machine resourses hosted on an ArchLinux Machine<br><br>
-                        - Consisted of host machine configuration<br>
-                        - SSHD Server Configuration<br>
-                        - File System Structure<br>
-                        - Putty Public/Private Key and SFTP Access<br>
-                        - Data, Folder and Directory Permissions and Access based off of custom roles for employees<br>
-                        - Finalised with a full system security assessment and audit for proper configuration confirmation
-                    </p>
-                </div>
+            <div class="project">
+                <h2 class="project-title">Safety Critical Systems</h2>
+                <h3 class="project-title">Safety Analysis of a Brake-By-Wire System</h3>
+                <p class="project-desc">
+                    <span class="terminal-symbol">$</span> cat safety_analysis.py<br><br>
+                    - Module at university used methods to gather information regarding system faults and the reliability of the system<br>
+                    - The system covered was a Brake-By-Wire system for a vehicle, methods used were:<br>
+                    - Fault Tree Diagrams<br>
+                    - Logical Expressions<br>
+                    - Cut-Set calculations<br>
+                    - Markov Modelling<br>
+                    - MTBF Calculations<br>
+                    - Python Code for reliability calculations for the system over x amount of time
+                </p>
             </div>
 
-            <div class="contacts">
-                <a href="mailto:elliottbowring@outlook.com" class="link email">elliottbowring@outlook.com</a>
-                <a href="https://www.linkedin.com/in/bowriing/" target="_blank" class="link gradient-text">
-                    <i class="fab fa-linkedin fa-2x gradient-text" style="margin-right: 10px;"></i>
-                </a> 
+            <div class="line"></div>
+
+            <div class="project">
+                <h2 class="project-title">Secure Digital Infrastructure</h2>
+                <h3 class="project-title">SSH Server Configuration for a (Fake) Biotech Company</h3>
+                <p class="project-desc">
+                    <span class="terminal-symbol">$</span> vi ssh_config.txt<br><br>
+                    - Created and configured a data management system through virtual machine resources hosted on an ArchLinux Machine<br>
+                    - Consisted of host machine configuration<br>
+                    - SSHD Server Configuration<br>
+                    - File System Structure<br>
+                    - Putty Public/Private Key and SFTP Access<br>
+                    - Data, Folder and Directory Permissions and Access based off of custom roles for employees
+                </p>
             </div>
         </div>
 
-    </body>
+        <div class="contacts">
+            <span class="terminal-symbol">$</span> <a href="mailto:elliottbowring@outlook.com" class="link email">elliottbowring@outlook.com</a><br>
+            <span class="terminal-symbol">$</span> <a href="https://www.linkedin.com/in/bowriing/" target="_blank" class="link gradient-text">
+                <i class="fab fa-linkedin fa-2x gradient-text" style="margin-right: 10px;"></i>
+            </a> 
+        </div>
+    </div>
+</body>
 </html>
