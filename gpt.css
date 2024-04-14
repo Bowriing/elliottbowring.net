@@ -57,6 +57,12 @@ body {
     margin-bottom: 20px;
 }
 
+.largeline {
+    border-top: 2px solid #f06292;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .contacts {
     margin-top: 20px;
 }
